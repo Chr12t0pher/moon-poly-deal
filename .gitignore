@@ -1,0 +1,6 @@
+.cache
+.idea
+.parcel-cache
+dist
+moon-poly-deal.iml
+node_modules
