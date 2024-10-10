@@ -1,5 +1,6 @@
-import { Card } from "./cards";
 import { RandomAPI } from "boardgame.io/dist/types/src/plugins/random/random";
+import {Card} from "../components/Board/Card/Card.types";
+import {Hand} from "./index";
 
 export function takeFromArray<T>(
   n: number,
@@ -31,4 +32,8 @@ export function dealFunction(
     random.Shuffle(deck);
     takeFromArray(2, deck, to);
   }
+}
+
+export function hasNothingOfValue(player: Hand) {
+  return [player.bank, player.properties].flat(2).filter(x => x.value > 0).length === 0;
 }

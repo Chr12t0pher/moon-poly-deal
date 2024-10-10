@@ -1,4 +1,3 @@
-import { stdout } from "process";
 import { ActionCard, Card, MoneyCard, PropertyCard, PropertySetInfo } from "../components/Board/Card/Card.types";
 
 export enum ActionName {
